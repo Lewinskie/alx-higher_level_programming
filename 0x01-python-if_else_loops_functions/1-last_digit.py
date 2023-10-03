@@ -9,6 +9,6 @@ if 0 > number:
     if last_last > 5:
         print("and is greater than {}".format(last_last))
     elif last_last == 0:
-        print("and is 0")
+        print("and is {}".format(last_last))
     else:
         print("and is less than 6 and not 0")
