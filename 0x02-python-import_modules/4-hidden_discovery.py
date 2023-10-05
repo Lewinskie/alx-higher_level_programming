@@ -4,8 +4,10 @@ import py_compile
 import hidden_4
 
 if __name__ == "__main__":
-    py_compile.compile('hidden_4.pyc')
-    pass
+    try:
+        py_compile.compile('hidden_4.pyc')
+    except py_compile.PyCompileError:
+        pass
 
     module_names = dir(hidden_4)
 
